@@ -552,6 +552,44 @@
       <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/ground_station</uri>
     </include>
 
+    <include>
+        <name>checkboard_rf</name>
+        <pose>-529.2 163 0 0 0 1</pose>
+        <uri>model://aruco_box/</uri>
+    </include>
+
+    <include>
+        <name>checkboard_lf</name>
+        <pose>-532.5 165 0 0 0 1</pose>
+        <uri>model://aruco_box/</uri>
+    </include>
+
+    <include>
+        <name>checkboard_rb</name>
+        <pose>-531.8 159 0 0 0 1</pose>
+        <uri>model://aruco_box/</uri>
+    </include>
+
+    <include>
+        <name>checkboard_lb</name>
+        <pose>-535 161 0 0 0 1</pose>
+        <uri>model://aruco_box/</uri>
+    </include>
+
+    <!-- <model name="checkerboard">
+  <static>true</static>
+  <link name="link">
+    <visual name="visual">
+      <geometry>
+        <mesh>
+            <uri>file:///media/zenon/UDisk/checkerboard.obj</uri>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+  <pose>0 0 0 0 0 0</pose>
+    </model> -->
+
     <!-- The projectile for the ball shooter -->
     <include>
       <name>blue_projectile</name>
@@ -637,3 +675,24 @@
 
   </world>
 </sdf>
+
+    <!-- <model name="checkboard">
+        <static>true</static>
+        <pose>2 0 0.1 0 0 0</pose>
+        <link name="link">
+            <visual name="checkboard_visual">
+                <geometry>
+                    <plane>
+                        <size>2 2</size> <!-- 设置棋盘格大小，单位为米 -->
+                    </plane>
+                </geometry>
+                <material>
+                    <texture>
+                        <uri>file://home/zenon/vrx_ws/src/vrx/vrx_gz/models/checkboard_model/materials/textures/checkboard.png</uri>
+                    </texture>
+                </material>
+            </visual>
+        </link>
+    </model>     -->
+
+
