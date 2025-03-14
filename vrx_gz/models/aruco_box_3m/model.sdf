@@ -40,7 +40,7 @@
         <visual name='aruco_box_mesh'>
           <geometry>
             <mesh>
-                <uri>model://aruco_box/chess.dae</uri>
+                <uri>model://aruco_box/chessboard3m.dae</uri>
                 <scale>1 1 0.02</scale>
             </mesh>
           </geometry>

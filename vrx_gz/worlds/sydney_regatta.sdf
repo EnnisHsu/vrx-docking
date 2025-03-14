@@ -554,25 +554,31 @@
 
     <include>
         <name>calibrate_f</name>
-        <pose>-578 217 0.2 0 0 0</pose>
-        <uri>model://aruco_box/</uri>
+        <pose>-583 213 0.2 0 0 1.57</pose>
+        <uri>model://aruco_box_3m/</uri>
     </include>
 
     <include>
         <name>calibrate_b</name>
-        <pose>-596 209 0.2 0 0 0</pose>
-        <uri>model://aruco_box/</uri>
+        <pose>-591 213 0.2 0 0 1.57</pose>
+        <uri>model://aruco_box_3m/</uri>
     </include>
 
     <include>
         <name>calibrate_l</name>
-        <pose>-587 220 0.2 0 0 0</pose>
-        <uri>model://aruco_box/</uri>
+        <pose>-587 217 0.2 0 0 0</pose>
+        <uri>model://aruco_box_3m/</uri>
     </include>
 
     <include>
         <name>calibrate_r</name>
-        <pose>-587 206 0.2 0 0 0</pose>
+        <pose>-587 209 0.2 0 0 0</pose>
+        <uri>model://aruco_box_3m/</uri>
+    </include>
+
+    <include>
+        <name>chessboard</name>
+        <pose>-600 209 2 0 0 0</pose>
         <uri>model://aruco_box/</uri>
     </include>
 
