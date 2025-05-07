@@ -43,7 +43,7 @@ def launch(context, *args, **kwargs):
         with open(config_file, 'r') as stream:
             models = Model.FromConfig(stream)
     else:
-      m = Model('wamv', 'wam-v', [-587, 213, 0, 0, 0, 0])
+      m = Model('wamv', 'wam-v', [-570, 213, 0, 0, 0, 3.14])
       if robot_urdf and robot_urdf != '':
           m.set_urdf(robot_urdf)
       models.append(m)

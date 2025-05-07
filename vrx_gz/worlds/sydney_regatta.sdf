@@ -309,6 +309,11 @@
       name="gz::sim::systems::NavSat">
     </plugin>
 
+    <!-- <plugin
+        filename="gz-sim-world-control-system"
+        name="gz::sim::systems::Control">
+    </plugin> -->
+
     <scene>
       <sky></sky>
       <grid>false</grid>
@@ -554,7 +559,7 @@
 
     <include>
         <name>calibrate_f</name>
-        <pose>-583 213 0.2 0 0 1.57</pose>
+        <pose>-583 213 30 0 0 1.57</pose>
         <uri>model://aruco_box_3m/</uri>
     </include>
 
@@ -580,6 +585,12 @@
         <name>chessboard</name>
         <pose>-600 209 2 0 0 0</pose>
         <uri>model://aruco_box/</uri>
+    </include>
+
+    <include>
+        <name>aprilbox</name>
+        <pose>-591 213 3 0 0 0</pose>
+        <uri>model://april_box/</uri>
     </include>
 
     <!-- <model name="checkerboard">
