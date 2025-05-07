@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.3.2 commit date:2024-12-16, commit time:21:10, hash:32f5fdce0a0a</authoring_tool>
     </contributor>
-    <created>2025-03-12T13:59:43</created>
-    <modified>2025-03-12T13:59:43</modified>
+    <created>2025-04-14T18:37:23</created>
+    <modified>2025-04-14T18:37:23</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -66,23 +66,13 @@
   <library_effects>
     <effect id="Material-effect">
       <profile_COMMON>
-        <newparam sid="chess8x8_png-surface">
-          <surface type="2D">
-            <init_from>chess8x8_png</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="chess8x8_png-sampler">
-          <sampler2D>
-            <source>chess8x8_png-surface</source>
-          </sampler2D>
-        </newparam>
         <technique sid="common">
           <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="chess8x8_png-sampler" texcoord="UVMap"/>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -92,11 +82,7 @@
       </profile_COMMON>
     </effect>
   </library_effects>
-  <library_images>
-    <image id="chess8x8_png" name="chess8x8_png">
-      <init_from>chess8x8.png</init_from>
-    </image>
-  </library_images>
+  <library_images/>
   <library_materials>
     <material id="Material-material" name="Material">
       <instance_effect url="#Material-effect"/>
@@ -126,7 +112,7 @@
           </technique_common>
         </source>
         <source id="Cube-mesh-map-0">
-          <float_array id="Cube-mesh-map-0-array" count="72">0.9992696 4.61042e-4 0.004882633 0.9960783 0.001191496 -0.009012043 1.0015 -5.38785e-4 0.004652202 0.9975392 1.15052e-4 7.63759e-5 1 0 -0.003960549 0.9993084 0 0 1.000039 0.002921819 0 1 0 0 1.000269 0.001691401 -2.69443e-4 0.9985391 0.002191364 -7.69317e-4 0.9978086 -0.003460645 -0.001499772 0.9970782 0.003421783 -0.003460645 0.9992696 4.61042e-4 0.9992696 0.9985391 0.004882633 0.9960783 1.0015 -5.38785e-4 1.00273 1.004922 0.004652202 0.9975392 1 0 0.9978086 0.9993084 -0.003960549 0.9993084 1.000039 0.002921819 1 1 0 1 1.000269 0.001691401 0.9965782 0.9985391 -2.69443e-4 0.9985391 0.9978086 -0.003460645 0.9965783 0.9958478 -0.001499772 0.9970782</float_array>
+          <float_array id="Cube-mesh-map-0-array" count="72">0.9992696 4.61042e-4 0.004882633 0.9960783 0.001191496 -0.009012043 1.0015 0.9994612 0.004652202 -0.002460777 1.000115 7.63759e-5 0.3320313 0 -0.003960549 0.9993084 0 0 1.000039 0.002921819 0 1 0 0 0.3323007 0.001691401 -2.69443e-4 0.9985391 0.002191364 -7.69317e-4 0.9978086 0.9965394 -0.001499772 -0.002921819 1.003422 -0.003460645 0.9992696 4.61042e-4 0.9992696 0.9985391 0.004882633 0.9960783 1.0015 0.9994612 0.002730131 1.004922 0.004652202 -0.002460777 0.3320313 0 0.3317929 0.9993084 -0.003960549 0.9993084 1.000039 0.002921819 1 1 0 1 0.3323007 0.001691401 0.3325157 1.000492 -2.69443e-4 0.9985391 0.9978086 0.9965394 -0.003421664 0.9958478 -0.001499772 -0.002921819</float_array>
           <technique_common>
             <accessor source="#Cube-mesh-map-0-array" count="36" stride="2">
               <param name="S" type="float"/>
@@ -157,7 +143,7 @@
         <instance_light url="#Light-light"/>
       </node>
       <node id="Cube" name="Cube" type="NODE">
-        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <matrix sid="transform">3 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
         <instance_geometry url="#Cube-mesh" name="Cube">
           <bind_material>
             <technique_common>

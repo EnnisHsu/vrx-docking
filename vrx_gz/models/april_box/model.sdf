@@ -1,7 +1,7 @@
 <?xml  version="1.0" ?>
 <sdf version="1.5">
 
- <model name='aruco_box'>
+ <model name='april_box'>
         <static>true</static>
       <pose>0 0 0 0 -0 0</pose>
       <link name='link'>
@@ -20,7 +20,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>2 2 0.02</size>
+              <size>2 0.02 2</size>
             </box>
           </geometry>
           <surface>
@@ -37,11 +37,11 @@
           </surface>
           <max_contacts>10</max_contacts>
         </collision>
-        <visual name='aruco_box_mesh'>
+        <visual name='april_box_mesh'>
           <geometry>
             <mesh>
-                <uri>model://aruco_box_3m/chessboardgray3m.dae</uri>
-                <scale>1 1 1</scale>
+                <uri>model://april_box/AprilBox.dae</uri>
+                <scale>0.02 1 1</scale>
             </mesh>
           </geometry>
         </visual>
